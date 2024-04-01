@@ -1,4 +1,4 @@
-from Chart2Text.utils import tokenizer as tkn
+from utils import tokenizer as tkn
 import os
 
 def groupSequence(lst):
