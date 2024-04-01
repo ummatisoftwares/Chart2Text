@@ -436,9 +436,9 @@ def getSubject(titleTokens, nerEntities):
             guessedSubject = ' '.join(uppercaseWords[1:])
         else:
             if len(uppercaseWords) > 0:
-                guessedSubject = ' '
-            else:
                 guessedSubject = uppercaseWords[0]
+            else:
+                guessedSubject = ''
         entities['Subject'].append(guessedSubject)
     # print(entities['Date'])
     cleanTitle = [titleWord for titleWord in titleTokens if titleWord.lower() not in fillers]
